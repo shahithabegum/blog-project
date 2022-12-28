@@ -8,6 +8,7 @@ const initial_state={
 
 export const Context=createContext(initial_state)
 
+
 export const ContextProvider=({children})=>{
   const[state,dispatch]= useReducer(Reducer,initial_state);
   useEffect(() => {
